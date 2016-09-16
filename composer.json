@@ -1,0 +1,54 @@
+{
+    "name": "kraken-php/kraken",
+    "description": "Kraken Framework",
+    "keywords": [
+        "kraken", "kraken-php", "framework"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "kraken-php/channel": "0.3.*",
+        "kraken-php/config": "0.3.*",
+        "kraken-php/console": "0.3.*",
+        "kraken-php/container": "0.3.*",
+        "kraken-php/core": "0.3.*",
+        "kraken-php/environment": "0.3.*",
+        "kraken-php/event": "0.3.*",
+        "kraken-php/filesystem": "0.3.*",
+        "kraken-php/ipc": "0.3.*",
+        "kraken-php/log": "0.3.*",
+        "kraken-php/loop": "0.3.*",
+        "kraken-php/network": "0.3.*",
+        "kraken-php/promise": "0.3.*",
+        "kraken-php/root": "0.3.*",
+        "kraken-php/runtime": "0.3.*",
+        "kraken-php/stream": "0.3.*",
+        "kraken-php/supervision": "0.3.*",
+        "kraken-php/throwable": "0.3.*",
+        "kraken-php/util": "0.3.*"
+    },
+    "require-dev": {
+        "kraken-php/test": "0.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "test"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
