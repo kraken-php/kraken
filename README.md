@@ -1,4 +1,4 @@
-# Kraken Demo Application
+# Kraken Framework Application Skeleton
 
 [![Build Status](https://travis-ci.org/kraken-php/framework.svg)](https://travis-ci.org/kraken-php/framework)
 [![Total Downloads](https://poser.pugx.org/kraken-php/kraken/downloads)](https://packagist.org/packages/kraken-php/kraken) 
@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/kraken-php/framework/v/unstable)](https://packagist.org/packages/kraken-php/framework) 
 [![License](https://poser.pugx.org/kraken-php/framework/license)](https://packagist.org/packages/kraken-php/framework)
 
-> **Note:** This repository contains pre-configured application for fast creation of new projects with [Kraken Framework](https://github.com/kraken-php/framework).
+> **Note:** This repository contains pre-configured application skeleton for fast creation of new projects with [Kraken Framework](https://github.com/kraken-php/framework).
 
 <br>
 <p align="center">
@@ -41,7 +41,7 @@ For more information go to [framework repository](https://github.com/kraken-php/
 
 ## Installation and Official Documentation
 
-To install this pre-configured application, please go to desired location to store project, then call composer:
+To install this application skeleton, please go to desired location to store project, then call composer:
 
 ```
 composer create-project --prefer-dist kraken-php/kraken .

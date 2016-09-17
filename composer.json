@@ -1,6 +1,6 @@
 {
     "name": "kraken-php/kraken",
-    "description": "Kraken Framework",
+    "description": "Kraken Framework Application Skeleton",
     "keywords": [
         "kraken", "kraken-php", "framework"
     ],
