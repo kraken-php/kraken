@@ -44,10 +44,10 @@
     "config": {
         "vendor-dir": "vendor"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.4-dev"
-        }
+    "scripts": {
+        "post-root-package-install": [
+            "php ./data/script/script.install"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true

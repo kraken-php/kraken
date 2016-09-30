@@ -1,0 +1,76 @@
+<?php
+
+$dataPath = realpath(__DIR__ . '/../');
+$basePath = realpath(__DIR__ . '/../../');
+
+function path($path)
+{
+    global $dataPath;
+    global $basePath;
+
+    return $dataPath . $path;
+}
+
+if (!file_exists(path('/environment/.env')))
+{
+    copy(path('/environment/.env.example'), path('/environment/.env'));
+}
+
+var_dump('hej?');
+
+if (!is_dir(path('/log')))
+{
+    mkdir(path('/log'));
+}
+
+if (!is_dir(path('/storage')))
+{
+    mkdir(path('/storage'));
+}
+
+if (!is_dir(path('/temp')))
+{
+    mkdir(path('/temp'));
+}
+
+$logDirs = [
+    'alert', 'critical', 'debug', 'emergency', 'error', 'info', 'notice', 'warning'
+];
+
+foreach ($logDirs as $dir)
+{
+    $dir = '/log/' . $dir;
+
+    if (!is_dir(path($dir)))
+    {
+        mkdir(path($dir));
+    }
+}
+
+$storageDirs = [
+    'project', 'process', 'thread'
+];
+
+foreach ($storageDirs as $dir)
+{
+    $dir = '/storage/' . $dir;
+
+    if (!is_dir(path($dir)))
+    {
+        mkdir(path($dir));
+    }
+}
+
+$tempDirs = [
+    'socket'
+];
+
+foreach ($tempDirs as $dir)
+{
+    $dir = '/temp/' . $dir;
+
+    if (!is_dir(path($dir)))
+    {
+        mkdir(path($dir));
+    }
+}

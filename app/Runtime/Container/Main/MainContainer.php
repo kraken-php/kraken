@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Container\Test;
+namespace App\Runtime\Container\Main;
 
 use Kraken\Core\CoreInterface;
 use Kraken\Runtime\RuntimeContainer;
 use Kraken\Runtime\RuntimeContainerInterface;
 
-class TestContainer extends RuntimeContainer implements RuntimeContainerInterface
+class MainContainer extends RuntimeContainer implements RuntimeContainerInterface
 {
     /**
      * @var string

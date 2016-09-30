@@ -17,23 +17,16 @@
 
 ## Description
 
-Kraken is the first and only multi-processed, multi-threaded, fault-tolerant framework for PHP. It has been written to 
-provide easy and reliable API for creating distributed applications using PHP. Kraken aims to solve typical problems of 
-writing such applications and to provide developers with powerful yet elegant tools for dealing with them. 
-
-The main focus of Kraken Framework is put on: 
-* __Concurrency__ : create systems that are asynchronous and concurrent by design,
-* __Distribution__ : divide your application into several containers and run them on multiple threads, processors or hosts,
-* __Faul tolerance__ : write systems that self-heal using remote and local supervision hierarchies,
-* __Elasticity__ : modify existing architecture in realtime without need to change in code,
-* __High performance__ : handle up to thousands of connections per second on each container,
-* __Extensibility__ : use available options to easily extend and adapt framework features for your needs.
-
-Start writing applications that were previously marked as impossible or hard to implement in PHP right know. Servers, 
-service-oriented architecture, agent-based models, games, complex daemons, socket programs, schedulers and much, much 
-more - nothing is impossible with Kraken! 
+This repository is pre-configured, clean and empty skeleton for creating a new projects using [Kraken Framework](https://github.com/kraken-php/framework).
 
 For more information go to [framework repository](https://github.com/kraken-php/framework) or [official website](http://kraken-php.com).
+
+## You Might Also Be Interested In
+
+To help you getting into working with Kraken, the official repository contains additional demo applications, that you might
+be interested in checking out:
+
+- [Distributed Chat App](https://github.com/kraken-php/demo-chat) - this application implements simple, real-time chat in PHP using HTTP and WebSockets.
 
 ## Requirements
 
@@ -48,6 +41,38 @@ To install this application skeleton, please go to desired location to store pro
 ```
 composer create-project --prefer-dist kraken-php/kraken .
 ```
+
+## Starting The Project
+
+### Basic Start
+
+To start project, first run `kraken.server` instance.
+
+    $> kraken.server
+
+Then, check if connection is working in another terminal window:
+
+    $> kraken server:ping
+
+If everything works correctly, as final step, run the application using:
+
+    $> kraken project:create
+
+To close the project, use:
+
+    $> kraken project:destroy
+
+### Alternative Start
+
+While developing your application it might be useful for you to start containers alternatively, one by one. To do that, 
+without console support, use:
+
+    $> php ./data/autorun/kraken.process undefined Main Main
+
+**WARNING** This script is only useful for running your containers for debug purpose. Your application should never call
+them, but instead use proper built-in commands!
+
+## Documentation
 
 Documentation for the framework can be found in the [official documentation][2] page.
 
