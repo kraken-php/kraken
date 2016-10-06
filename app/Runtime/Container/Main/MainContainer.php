@@ -9,20 +9,6 @@ use Kraken\Runtime\RuntimeContainerInterface;
 class MainContainer extends RuntimeContainer implements RuntimeContainerInterface
 {
     /**
-     * @var string
-     */
-    protected $endpoint = 'tcp://%localhost%:2080';
-
-    /**
-     * @override
-     * @inheritDoc
-     */
-    public function genEndpoint()
-    {
-        return $this->endpoint;
-    }
-
-    /**
      * @override
      * @inheritDoc
      */
