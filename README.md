@@ -1,4 +1,4 @@
-# Kraken Framework Application Skeleton
+# Kraken Application Skeleton
 
 [![Build Status](https://travis-ci.org/kraken-php/framework.svg)](https://travis-ci.org/kraken-php/framework)
 [![Total Downloads](https://poser.pugx.org/kraken-php/kraken/downloads)](https://packagist.org/packages/kraken-php/kraken) 
