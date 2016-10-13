@@ -16,8 +16,6 @@ if (!file_exists(path('/environment/.env')))
     copy(path('/environment/.env.example'), path('/environment/.env'));
 }
 
-var_dump('hej?');
-
 if (!is_dir(path('/log')))
 {
     mkdir(path('/log'));
