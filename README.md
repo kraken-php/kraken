@@ -47,19 +47,19 @@ composer create-project --prefer-dist kraken-php/kraken .
 
 To start project, first run `kraken.server` instance.
 
-    $> kraken.server
+    $> php kraken.server
 
 Then, check if connection is working in another terminal window:
 
-    $> kraken server:ping
+    $> php kraken server:ping
 
 If everything works correctly, as final step, run the application using:
 
-    $> kraken project:create
+    $> php kraken project:create
 
 To close the project, use:
 
-    $> kraken project:destroy
+    $> php kraken project:destroy
 
 ### Alternative Start
 
