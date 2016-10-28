@@ -12,7 +12,7 @@ return [
      * -----------------------------------------------------------------------------------------------------------------
      * Additional configuration file to load.
      * -----------------------------------------------------------------------------------------------------------------
-     * This variable should contain array of { resource, mode } strucutres. Resource-key should be valid path of
+     * This variable should contain array of { resource, mode } structures. Resource-key should be valid path of
      * additional configuration file, and mode-key should be one of "merge" or "replace". The first option performs full
      * recursive merge of given configuration, replace performs non-recursive variation.
      *
